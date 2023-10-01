@@ -1,17 +1,15 @@
 # RLE-Program
 
-Gameplay Description
-Each game begins with the player being dealt a card, and the player must get as close to 21 without exceeding.
-They can choose to get another card (hit) or keep their current cards (stand).
-The dealer's objective is to surpass the player's hand without exceeding 21.
-The winner is determined at the game's conclusion based on proximity to 21. The game keeps track of wins over successive rounds.
+Functionality
+A user-friendly menu is presented with various options of loading an image, reading RLE strings, and displaying the image. 
+Images are structured as lists of numbers, starting with the width and height of the image. 
+Pixel colors are numerically represented, and runs of similar pixels are capped at 15 consecutive instances.
 
 Project Structure
-The game initializes by printing "START GAME #1" and auto-dealing the player's first card.
-Cards are represented by numbers: 1 (ACE!), 2-10 (face values), 11 (JACK!), 12 (QUEEN!), and 13 (KING!). 
-Face cards are valued at 10, and Aces are valued at 1.
-A menu guides player actions: Get another card, Hold hand, Print statistics, and Exit.
-The game tracks statistics, including total games, player wins, dealer wins, and ties. These stats are presented upon player request.
+The program uses RLE to compress data where similar consecutive elements, such as pixel colors, are represented.
+Images are inherently stored in an uncompressed/unencoded format. The program works with this data in terms of lists.
+The program offers multiple methods of data input, including loading from a file, inputting RLE data manually, and handling hex string data.
+Data visualization options include displaying the original image, its RLE representation, the RLE in hexadecimal, and the uncompressed data in hexadecimal.
 
 Credits
-The UF CISE Department provided the console_gfx.py file and the objectives for this project to complete.
+The UF CISE Department provided the objectives for this project to complete.
